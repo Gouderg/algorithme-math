@@ -7,3 +7,9 @@ Les projects Euler sont des problèmes de mathématiques/programmation qui requi
 
 ## Gram-Schmidt
 En algèbre linéairen dans un espace préhilbertien (c'est à dire un espace vectoriel sur le corps des réels ou celui des complexes, muni d'un produit scalaire), l'algoritme de Gram-Schmidt permet de construire, à partir d'une famille libre finie, une base orthonormée du sous-espace qu'elle engendre. 
+
+## Utilisation d'un des programmes 
+```bash
+	python3 gramSchmidt.py
+```
+
