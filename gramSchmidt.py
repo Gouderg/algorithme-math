@@ -5,11 +5,11 @@ def saisie(choix):
 	if choix == 1: text = "Nombre de vecteur: "
 	elif choix == 2: text = "Dimension des vecteurs: "
 	
-		while True:
-			nb = input(text)
-			if int(nb) and int(nb) > 0:
-				return int(nb)
-			print("Mauvaise saisie")
+	while True:
+		nb = input(text)
+		if int(nb) and int(nb) > 0:
+			return int(nb)
+		print("Mauvaise saisie")
 
 #Saisie des coordonnés des vecteurs
 def saisieVecteur(nbVecteur, dimVecteur):
