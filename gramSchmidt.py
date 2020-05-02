@@ -15,17 +15,24 @@ def saisie(choix):
 def saisieVecteur(nbVecteur, dimVecteur):
 	vecteurs = []
 	for i in range(nbVecteur):
+		ok = True
 		vecteur = np.empty(dimVecteur)
-		for j in range(dimVecteur):
-			while True:
-				text = "Vecteur "+str(i)+", coordonnée "+str(j)+" :"
-				coord = input(text)
-				if int(coord) or int(coord) == 0:
-					vecteur[j] = int(coord)
-					break
-				print("Mauvaise saisie")
+		while ok:
+			for j in range(dimVecteur):
+				while True:
+					text = "Vecteur "+str(i)+", coordonnée "+str(j)+" :"
+					coord = input(text)
+					if int(coord) or int(coord) == 0:
+						vecteur[j] = int(coord)
+						break
+					print("Mauvaise saisie")
+			if np.sum(vecteur == 0) == dimVecteur:
+				print("Saisie vecteur nul, réessayer")
+			else:
+				ok = False
 		print(vecteur)
 		vecteurs.append(vecteur)
+		
 		print()
 	return vecteurs
 
