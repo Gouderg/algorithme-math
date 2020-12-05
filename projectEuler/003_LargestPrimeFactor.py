@@ -1,5 +1,9 @@
-#Calcule le plus grand facteur premier d'un nombre
 from math import sqrt
+'''
+The prime factors of 13195 are 5, 7, 13 and 29.
+
+What is the largest prime factor of the number 600851475143 ?
+'''
        
 def maxPrimeFactors(n): 
 	maxPrime = -1
@@ -18,4 +22,4 @@ def maxPrimeFactors(n):
       
 	return int(maxPrime)
 
-print(maxPrimeFactors(17))
+print(maxPrimeFactors(600851475143))

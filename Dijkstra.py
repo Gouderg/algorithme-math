@@ -118,11 +118,10 @@ if __name__ == '__main__':
 	# matrice, pStart, pEnd = recupData()
 	
 	pStart, pEnd = 'A', 'C'
-	matrice = {'A': {'B': 4, 'D': 2}, 
-				'B': {'A': 4, 'C': 3}, 
-				'C': {'B': 3}, 
-				'D':{'A': 2}
-			    }
+	matrice = {'A': {'B': 3}, 
+				'B': {'C': 2}, 
+				'C': {'A': 1}
+			  }
 
 	poids, points = dijkstra(matrice, pStart, pEnd)
 
